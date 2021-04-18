@@ -250,7 +250,7 @@ function HouseGarage(house)
             QBCore.Functions.Notify("You have no vehicles in your garage", "error", 5000)
             closeMenuFull()
         else
-            Menu.addButton(HouseGarages[house].label, "yeet", HouseGarages[house].label)
+            Menu.addButton(HouseGarages[house].label, "MenuHouseGarage", HouseGarages[house].label)
 
             for k, v in pairs(result) do
                 enginePercent = round(v.engine / 10, 0)
@@ -294,7 +294,7 @@ function DepotList()
             QBCore.Functions.Notify("There are no vehicles in the Impound", "error", 5000)
             closeMenuFull()
         else
-            Menu.addButton(Depots[currentGarage].label, "yeet", Depots[currentGarage].label)
+            Menu.addButton(Depots[currentGarage].label, "MenuDepot", Depots[currentGarage].label)
 
             for k, v in pairs(result) do
                 enginePercent = round(v.engine / 10, 0)
@@ -328,7 +328,7 @@ function VehicleList()
             QBCore.Functions.Notify("You have no vehicles in this garage", "error", 5000)
             closeMenuFull()
         else
-            Menu.addButton(Garages[currentGarage].label, "yeet", Garages[currentGarage].label)
+            Menu.addButton(Garages[currentGarage].label, "MenuGarage", Garages[currentGarage].label)
 
             for k, v in pairs(result) do
                 enginePercent = round(v.engine / 10, 0)
@@ -367,7 +367,7 @@ function GangVehicleList()
             QBCore.Functions.Notify("You have no vehicles in this garage", "error", 5000)
             closeMenuFull()
         else
-            Menu.addButton(GangGarages[currentGarage].label, "yeet", GangGarages[currentGarage].label)
+            Menu.addButton(GangGarages[currentGarage].label, "MenuGarage", GangGarages[currentGarage].label)
 
             for k, v in pairs(result) do
                 enginePercent = round(v.engine / 10, 0)
